@@ -6,7 +6,7 @@
  * @subpackage Elegant WPExplorer Theme
  * @since Elegant 1.0
  */
-get_header();
+get_header(); 
 ?>
 
 <?php
@@ -75,7 +75,7 @@ $args = array(
             'key' => 'category_tombstone',
             'value' => $ConsultingCategory[1],
             'compare' => 'LIKE'
-        ),
+        ),       
     )*/
 );
 
@@ -180,7 +180,7 @@ $url_root_page = get_page_link();
     <div class="container">
         <div id="primary" class="content-area clr">
             <div id="content" class="site-content" role="main">
-                <div class="page-content">
+                <div class="page-content"> 
                     <div class="row header-table header-type-tombstone">
                         <div class="wrapper-col-3">
                             <div class="col-lg-3 wrapper-sort-label-info">
@@ -221,7 +221,7 @@ $url_root_page = get_page_link();
                                     <?php else: ?>
                                         <p>No items found in the Type category</p>
                                     <?php endif; ?>
-                                </div>
+                                </div>                                
                             </div>
                             <div class="col-lg-4 wrapper-industry-info">
                                 <?php $field_key = "field_54526afea6cf8"; ?>
@@ -313,8 +313,8 @@ $url_root_page = get_page_link();
                                     <?php $str_type = ''; ?>
                                     <?php if (is_array($types)): ?>
                                         <?php $count = count($types); ?>
-                                        <?php foreach ($types as $key => $value): ?>
-                                            <?php $tmp = $key + 1; ?>
+                                        <?php foreach ($types as $key => $value): ?> 
+                                            <?php $tmp = $key + 1; ?> 
                                             <?php if ($count == $tmp): ?>
                                                 <?php $str_type .='"choice_' . $value . '"'; ?>
                                             <?php else: ?>
@@ -331,8 +331,8 @@ $url_root_page = get_page_link();
                                     <?php $str_industry = ''; ?>
                                     <?php if (is_array($industrys)): ?>
                                         <?php $count = count($industrys); ?>
-                                        <?php foreach ($industrys as $key => $value): ?>
-                                            <?php $tmp = $key + 1; ?>
+                                        <?php foreach ($industrys as $key => $value): ?> 
+                                            <?php $tmp = $key + 1; ?> 
                                             <?php if ($count == $tmp): ?>
                                                 <?php $str_industry .='"choice_' . $value . '"'; ?>
                                             <?php else: ?>
@@ -349,8 +349,8 @@ $url_root_page = get_page_link();
                                     <?php $str_professional = ''; ?>
                                     <?php if (is_array($professionals)): ?>
                                         <?php $count = count($professionals); ?>
-                                        <?php foreach ($professionals as $key => $value): ?>
-                                            <?php $tmp = $key + 1; ?>
+                                        <?php foreach ($professionals as $key => $value): ?> 
+                                            <?php $tmp = $key + 1; ?> 
                                             <?php if ($count == $tmp): ?>
                                                 <?php $str_professional .='"choice_' . $value . '"'; ?>
                                             <?php else: ?>
@@ -384,7 +384,7 @@ $url_root_page = get_page_link();
                                         </div>
                                         <!-- END CONTENT -->
                                     </div>
-                                    <?php if ($i < 3): ?>
+                                    <?php if ($i < 3): ?> 
                                         <?php $i = $i + 1; ?>
                                     <?php else: ?>
                                         <?php $i = 1; ?>
@@ -416,7 +416,7 @@ $url_root_page = get_page_link();
                     obj.dd.on('click', function(event){
                         $(this).toggleClass('active');
                         event.stopPropagation();
-                    });
+                    }); 
                 }
             }
             function DropSort(el) {
@@ -451,12 +451,12 @@ $url_root_page = get_page_link();
                     return this.index;
                 }
             }
-            /* End Sort */
-
+            /* End Sort */    
+            
             var sort_by_industry = new DropSort($('#sort_by_industry'));
             var sort_by_professional = new DropSort($('#sort_by_professional'));
             var sort_by_type = new DropSort($('#sort_by_type'));
-
+            
             var $grid = $('#grid');
             // instantiate the plugin
             $grid.shuffle({
@@ -466,7 +466,7 @@ $url_root_page = get_page_link();
                 sequentialFadeDelay: 150,
                 speed: 0
             });
-
+         
             function redirectPage(){
                 var filters_pagination_type = "all";
                 var option_pagination_filter_type = $('#sort_by_type .filter-options a.active');
@@ -477,7 +477,7 @@ $url_root_page = get_page_link();
                 var option_pagination_filter_industry = $('#sort_by_industry .filter-options a.active');
                 if(option_pagination_filter_industry.length > 0){
                     var filters_pagination_industry = option_pagination_filter_industry.attr('data-group');
-                }
+                }         
                 var filters_pagination_professional = "all";
                 var option_pagination_filter_professional = $('#sort_by_professional .filter-options a.active');
                 if(option_pagination_filter_professional.length > 0){
@@ -485,7 +485,7 @@ $url_root_page = get_page_link();
                 }
                 window.location = "<?php echo $url_root_page; ?>?type="+filters_pagination_type+"&industry="+filters_pagination_industry+"&professional="+filters_pagination_professional;
             }
-
+            
             //****By Type****//
             $('#sort_by_type .filter-options a').click(function (e) {
                 e.preventDefault();
@@ -497,7 +497,7 @@ $url_root_page = get_page_link();
                 redirectPage();
             });
             //****End By Type****//
-
+            
             //****By Industry****//
             $('#sort_by_industry .filter-options a').click(function (e) {
                 e.preventDefault();
@@ -508,7 +508,7 @@ $url_root_page = get_page_link();
                 redirectPage();
             });
             //****End By Industry****//
-
+            
             //****By Professional****//
             $('#sort_by_professional .filter-options a').click(function (e) {
                 e.preventDefault();
@@ -519,8 +519,8 @@ $url_root_page = get_page_link();
                 redirectPage();
             });
             //****End By Professional****//
-
-
+            
+            
         });
     </script>
 </div>

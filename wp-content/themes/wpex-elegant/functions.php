@@ -161,7 +161,7 @@ function filter_search($query) {
            }
 
         }
-
+        
     };
     return $query;
 }
@@ -405,7 +405,7 @@ function my_acf_load_field($field) {
     return $field;
 }
 
-// v3.5.8.2 and below
+// v3.5.8.2 and below   
 add_filter('acf_load_field-tombstones_slider_servide', 'my_acf_load_field');
 
 // v4.0.0 and above
