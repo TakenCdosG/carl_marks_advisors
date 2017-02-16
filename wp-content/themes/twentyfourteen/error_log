@@ -1,0 +1,1 @@
+[02-Feb-2017 18:53:17 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/cmadvisor/public_html/wp-content/themes/twentyfourteen/404.php on line 10

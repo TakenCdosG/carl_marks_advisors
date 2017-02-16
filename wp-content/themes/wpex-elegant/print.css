@@ -1,0 +1,210 @@
+/* Print Styles 
+================================================== */
+@media print {
+    .a-print-button{
+        display: none;
+    }
+
+    .page-break	{ 
+        display: block; 
+        page-break-before: right;
+        margin-bottom: 30px;
+    }
+    #site-navigation-wrap{
+        display: none;
+    }
+    .clear-bg {
+        background: white;
+        margin-top: 30px;
+        display: block;
+    }
+    #header-widgets{
+        display: none;
+    }
+    #header-wrap{
+        border:none;
+    }
+
+    .header-content-box .header-content-title{
+        color:#0d325b;
+        font-family: "raleway";
+        font-size: 42px;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar-container{
+        display: none;
+    }
+
+    .left-content {
+        float: left;
+        width: 100%;
+    }
+
+    #footer-widgets .span_1_of_6{
+        display: none;
+    }
+
+    #footer-widgets .span_3_of_6{
+        display: none;
+    }
+
+    #footer-widgets .span_1_of_3{
+        width: 100%;
+        color:#0d325b;
+    }
+
+    .header-content-box p{
+        font-family: "raleway";
+        font-size: 28px;
+        color:#0d325b;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+        margin-left: -8px;
+        letter-spacing: 0.0px;
+    }
+
+    .header-content-box {
+        padding: 20px 15px;
+        margin-top: 128px;
+        background-repeat: repeat;
+        position: relative;
+        width: 70%;
+    }
+
+    .home #header-container{
+        height: auto;
+    }
+
+    #header-container {
+        height: 123px;
+    }
+
+    .wrapper-filter-sort-news{
+        display: none;
+    }
+
+    .filter-sort{
+        display: none;
+    }
+
+    #grid .col-sm-4 {
+        width: 47%;
+        float: left;
+        position: relative!important;
+        min-height: 1px;
+        padding-right: 10px;
+        padding-left: 10px;
+        vertical-align: baseline;
+        height: 190px;
+        top: auto!important;
+        left: auto!important;
+        transform: none!important;
+        transition: none!important;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        display: block;
+    }
+
+    .single-team #main #content .page-content .row .col-md-2{
+        max-width: 243px;
+        width: 23%;
+    }
+
+    .top-header {
+        background: transparent;
+        padding: 10px 0;
+        color: #114067;
+        background-image: none;
+    }
+
+    #main {
+        padding: 40px 0;
+        background-color: transparent;
+        background-image: none;
+        background-repeat: repeat;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .visible-print{
+        display: block;
+    }
+
+    .single-team .site-content .page-content .col-md-3.right_sideber_content {
+        display: none;
+    } 
+
+    .single-team .site-content .page-content .col-md-7 {
+        width: 69%;
+    }
+
+    .page-buckets{
+        display: none;
+    }
+
+    .flexslider .slides > li {
+        display: block;
+        min-height: 400px;
+    }
+
+    .homepage-slide-content{
+        display: block;
+        position: relative;
+        top: 174px;
+        right: 0;
+        z-index: 9999;
+        margin: auto auto auto 10%;
+        width: auto;
+        left: 0%;
+    }
+
+    #footer-widgets .span_1_of_3.col-3 .widget_nav_menu .menu-bottom-menu-container {
+        display: none;
+    }
+
+    .home .flexslider .slides img {
+        display: none;
+    }
+
+    #footer-widgets .span_1_of_3 {
+        width: auto;
+        color: #0d325b;
+        float: left;
+        padding-left: 0px!important;
+        text-align: left!important;
+    }
+
+    .home #footer-widgets .span_1_of_3{
+        width: 60%;
+        color: #0d325b;
+        float: left;
+        padding-left: 10px!important;
+        text-align: left!important;
+    }
+
+    #footer-wrap {
+        background: transparent;
+    }
+
+    .blue-box {
+        background: transparent;
+    }
+
+    body {
+        background: transparent;
+    }
+
+    #header-wrap {
+        position: relative;
+    }
+
+    .header-table{
+        display: none;
+    }
+}
+
