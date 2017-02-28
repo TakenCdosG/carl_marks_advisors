@@ -54,18 +54,21 @@ $industry_landing_page_team = get_field('industry_landing_page_team');
 $team = array();
 if(is_array($industry_landing_page_team)){
     foreach ($industry_landing_page_team as $key => $people) {
-        $item = array();
-        $item['name'] = $people->post_title;
-        $items_name = explode(" ", $item['name']);
-        $item['first_name'] = get_field('first_name', $people->ID);
-        $item['last_name'] = get_field('last_name', $people->ID);
-        $item['position'] = get_field('position', $people->ID);
-        $item['contact'] = get_field('contact', $people->ID);
-        $item['education'] = get_field('education', $people->ID);
-        $src = wp_get_attachment_image_src(get_post_thumbnail_id($people->ID), 'full');
-        $item['imgurl'] = $src[0];
-        $item['get_permalink'] = get_permalink($people->ID);
-        $team[] = $item;
+        $post_status = 'publish';
+        if(isset($people->post_status) && ($people->post_status == $post_status)){
+            $item = array();
+            $item['name'] = $people->post_title;
+            $items_name = explode(" ", $item['name']);
+            $item['first_name'] = get_field('first_name', $people->ID);
+            $item['last_name'] = get_field('last_name', $people->ID);
+            $item['position'] = get_field('position', $people->ID);
+            $item['contact'] = get_field('contact', $people->ID);
+            $item['education'] = get_field('education', $people->ID);
+            $src = wp_get_attachment_image_src(get_post_thumbnail_id($people->ID), 'full');
+            $item['imgurl'] = $src[0];
+            $item['get_permalink'] = get_permalink($people->ID);
+            $team[] = $item;
+        }
     }
 }
 if($team>0){
