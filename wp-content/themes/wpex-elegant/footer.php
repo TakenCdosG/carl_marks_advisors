@@ -16,7 +16,7 @@
             <!-- .footer-box -->                
             <div class="footer-box span_1_of_3 col col-3">                    <?php dynamic_sidebar('footer-three'); ?>                </div>
             <!-- .footer-box -->   
-            <div class="footer-box span_3_of_3 col col-3" style="margin-left: 0px;"><p style="color: #fff;display: block;position: relative;"><i>Securities offered through Carl Marks Securities LLC, a member of FINRA and SIPC</i></p></div>         
+            <div class="footer-box span_3_of_3 col col-3" style="margin-left: 0px;"><p style="color: #fff;display: block;position: relative;"><i>Securities offered through Carl Marks Securities LLC, a member of FINRA and <a href="http://www.sipc.org/" target="_blank">SIPC</a></i></p></div>         
          </div>
          <!-- #footer-widgets -->        
       </div>
