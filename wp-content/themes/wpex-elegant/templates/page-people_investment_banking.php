@@ -111,7 +111,7 @@ $args = array(
                                     <?php endif; ?>
                                     <div class="wrapper-col-3 wrapper-content people-item" data-title='<?php echo $title; ?>' data-business='<?php echo $post['business_key']; ?>' data-groups='["all"]'  data-keyoffice="<?php if (!empty($post['key_office'])): ?><?php echo $post['key_office']; ?><?php endif; ?>" data-keyfirstname="<?php if (!empty($post['key_first_name'])): ?><?php echo $post['key_first_name']; ?><?php endif; ?>" data-keylastname="<?php if (!empty($post['key_last_name'])): ?><?php echo $post['key_last_name']; ?><?php endif; ?>">
                                         <div class="wrapper-people-item">
-                                            <div class="col-lg-3">
+                                            <div class="">
                                                 <div class="wrapper-sort-by-name">
                                                     <?php $src = wp_get_attachment_image_src(get_post_thumbnail_id($post['post_id']), 'full'); ?>
                                                     <?php $imgurl = $src[0]; ?>
@@ -124,6 +124,16 @@ $args = array(
                                                         <?php if (!empty($first_name) && !empty($last_name)): ?>
                                                             <div class="content-right">
                                                                 <h4 class="font-weight-bold name"><a href="<?php echo get_the_permalink($post['post_id']) ?>"><?php if (!empty($first_name)): ?><?php echo $first_name ?><?php endif; ?> <?php if (!empty($last_name)): ?><?php echo " " . $last_name ?><?php endif; ?></a></h4>
+                                                                <div class="label-wrapper business-info">
+                                                                    <?php if (!empty($post['custom_title'])): ?>
+                                                                        <?php echo $post['custom_title']; ?>
+                                                                    <?php else: ?>
+                                                                        <h5 class="people-position"><?php echo $position; ?></h5>
+                                                                        <?php echo $post['business_label']; ?>
+                                                                    <?php endif; ?>
+                                                                </div>
+                                                            
+                                                                <div class="content-label contact-info"> <?php echo $contact; ?> </div>
                                                                 <div class="content-right-hidden-lg">
                                                                     <div class="sort-item picture-item__title"><?php echo $last_name ?> <?php echo $first_name ?></div>
                                                                     <div class="label-wrapper business-info">
@@ -142,19 +152,6 @@ $args = array(
                                                         <?php endif; ?>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-lg-3 wrapper-business-info">
-                                                <div class="label-wrapper business-info">
-                                                    <?php if (!empty($post['custom_title'])): ?>
-                                                        <?php echo $post['custom_title']; ?>
-                                                    <?php else: ?>
-                                                        <h5 class="people-position"><?php echo $position; ?></h5>
-                                                        <?php echo $post['business_label']; ?>
-                                                    <?php endif; ?>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 wrapper-contact-info">
-                                                <div class="content-label contact-info"> <?php echo $contact; ?> </div>
                                             </div>
                                         </div>
                                     </div>
