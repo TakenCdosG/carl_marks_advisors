@@ -1797,12 +1797,15 @@ span.small{
 }
 
 .people-item{
-    height: 90px;
+    height: 120px;
     display: block;
-    width: 100%;
+    width: 33%;
+    float:left;
     border-bottom: 1px solid #EDEDED;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /*padding-top: 15px;
+    padding-bottom: 15px;*/
+    padding: 7px;
+    margin: 15px 0;
 }
 
 .people-item .wrapper-people-item{
@@ -2494,7 +2497,7 @@ h5.widget-left-title{
     font-family: "raleway"!important;
     line-height: 17px!important;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     position: relative;
 }
@@ -2801,7 +2804,7 @@ span.tel, span.separator, span.email a{
 }
 
 .content-right-hidden-lg{
-    display: none;
+    display: none !important;
 }
 
 .page-template-templatespage-services-php .page-content p{
@@ -3626,6 +3629,17 @@ ul.page-numbers a, ul.page-numbers span {
 }
 #pp_full_res iframe{
     height: 281px !important;
+}
+@media screen and (max-width: 540px){
+    .people-item{
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+@media screen and (max-width: 868px){
+    .people-item{
+        width: 50%;
+    }
 }
 @media screen and (min-width: 490px) and (max-width: 499px){
     #pp_full_res iframe{
