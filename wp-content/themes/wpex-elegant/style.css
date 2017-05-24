@@ -338,6 +338,7 @@ a { outline: 0 }
 .search-entry.type-team {
     min-height: 144px;
     padding-left: 125px;
+    overflow: hidden;
 }
 
 .search-entry-thumbnail { position: absolute; left: 0; top: 0; width: 105px; }
