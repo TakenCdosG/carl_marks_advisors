@@ -2695,8 +2695,9 @@ a.a-print-button{
 
 .v-card a{
     background-image: url(images/v-card.png)!important;
-    width: 30px;
-    height: 23px;
+    background-size: cover;
+    width: 23px;
+    height: 18px;
     display: block;
     position: relative;
     text-indent: -70px;
@@ -2706,8 +2707,9 @@ a.a-print-button{
 
 .linkedin-icon a{
     background-image: url(images/linkedin_vcard-height.jpg)!important;
-    width: 25px;
-    height: 25px;
+    background-size: cover;
+    width: 18px;
+    height: 18px;
     display: block;
     position: relative;
     text-indent: -70px;
